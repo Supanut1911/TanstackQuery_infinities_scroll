@@ -7,7 +7,6 @@ const initialUrl = "https://swapi.dev/api/people/";
 
 export function InfinitePeople() {
   const fetchUrl = async (url) => {
-    console.log("called");
     const response = await fetch(url);
     return response.json();
   };
